@@ -1,0 +1,40 @@
+body {
+  background-color: #f5e1b5; /* Цвет пергамента */
+  color: #5a3e1b; /* Цвет древних чернил */
+  font-family: "Georgia", serif; /* Благородный, старинный шрифт */
+  line-height: 1.8;
+  text-align: justify;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: "Garamond", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #4a2f1b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  text-indent: 20px; /* Отступ для эффекта рукописи */
+}
+
+.text {
+  font-family: "Papyrus", fantasy;
+  font-size: 18px;
+  color: #4a2f1b;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+blockquote {
+  font-family: "Caveat", cursive;
+  font-size: 1.5em; /* Размер шрифта для цитаты */
+  line-height: 1.6; /* Межстрочный интервал для лучшего восприятия */
+  font-style: italic; /* Для дополнительного выделения цитаты */
+}
