@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Sarigma/static/css/main.ec37afcf.css",
-    "main.js": "/Sarigma/static/js/main.3912042b.js",
+    "main.css": "/Sarigma/static/css/main.f1dfe5d6.css",
+    "main.js": "/Sarigma/static/js/main.339f1c53.js",
+    "static/media/background.jpg": "/Sarigma/static/media/background.73565b2e58f13996e096.jpg",
     "index.html": "/Sarigma/index.html",
-    "main.ec37afcf.css.map": "/Sarigma/static/css/main.ec37afcf.css.map",
-    "main.3912042b.js.map": "/Sarigma/static/js/main.3912042b.js.map"
+    "main.f1dfe5d6.css.map": "/Sarigma/static/css/main.f1dfe5d6.css.map",
+    "main.339f1c53.js.map": "/Sarigma/static/js/main.339f1c53.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec37afcf.css",
-    "static/js/main.3912042b.js"
+    "static/css/main.f1dfe5d6.css",
+    "static/js/main.339f1c53.js"
   ]
 }
