@@ -24,7 +24,7 @@ const ChapterNavigation = () => {
       setCurrentChapter((prevChapter) => prevChapter + 1);
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-      }, 50); // Задержка для обеспечения прокрутки
+      }, 50);
     }
   };
 
@@ -33,22 +33,38 @@ const ChapterNavigation = () => {
       setCurrentChapter((prevChapter) => prevChapter - 1);
       setTimeout(() => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-      }, 50); // Задержка для обеспечения прокрутки
+      }, 50);
     }
+  };
+
+  const changeChapter = (index) => {
+    setCurrentChapter(index);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <div className={styles.chapterNavigation}>
       <div>{chapters[currentChapter]}</div>
-      <div>
+      <div className={styles.navigationButtons}>
         <button onClick={previousChapter} disabled={currentChapter === 0}>
-          Предыдущая глава
+          &lt;
         </button>
+        <div className={styles.pageNumbers}>
+          {chapters.map((_, index) => (
+            <button
+              key={index}
+              className={currentChapter === index ? styles.active : ""}
+              onClick={() => changeChapter(index)}
+            >
+              {index + 1}
+            </button>
+          ))}
+        </div>
         <button
           onClick={nextChapter}
           disabled={currentChapter === chapters.length - 1}
         >
-          Следующая глава
+          &gt;
         </button>
       </div>
     </div>
